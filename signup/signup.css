@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Poppins',sans-serif;
+    background-color: #080710;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+     margin: 0;
+            overflow: hidden;
+            position: relative;
+}
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+}
+.background .shape {
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    border-radius: 50%;
+}
+.shape:first-child {
+    background: linear-gradient(#1845ad, #23a2f6);
+    left: -80px;
+    top: -80px;
+}
+.shape:last-child {
+    background: linear-gradient(to right, #ff512f, #f09819);
+    right: -30px;
+    bottom: -80px;
+}
+.formContainer {
+    position: relative; 
+    background-color: rgba(255,255,255,0.13);
+    padding: 20px;
+    border: 2px solid rgba(255,255,255,0.1);
+    border-radius: 10px;
+   
+    text-align: center;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+    position: relative;
+    height: 600px;
+    width: 400px;
+    z-index: 1;
+}
+
+.formContainer h1 {
+    color: white;
+    margin-bottom: 20px;
+}
+.formContainer hr {
+    border: 1px solid #3e3e4a;
+    margin-bottom: 25px;
+}
+label {
+    font-size: 15px;
+    color: white;
+    text-align: left;
+    display: block;
+    margin-bottom: 8px;
+}
+input[type=text],
+input[type=password] {
+    width: 100%;
+    font-size: 16px;
+    padding: 12px;
+    margin: 8px 0 20px 0;
+    display: inline-block;
+    border: none;
+    border-radius: 5px;
+    background: #3e3e4a;
+    color: white;
+    margin-bottom: 30px;
+}
+input[type=text]:focus,
+input[type=password]:focus {
+    background-color: #50505a;
+    outline: none;
+}
+button {
+    font-size: 16px;
+    font-weight: bold;
+    background-color: white;
+    color: #2e2e3a;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+button:hover {
+    background-color: #e0e0e0;
+}
+.formContainer p {
+    font-size: 14px;
+    color: white;
+}
+.formContainer p a {
+    color: #f39c12;
+    text-decoration: none;
+}
+.formContainer p a:hover {
+    text-decoration: underline;
+}
+.formContainer input[type=checkbox] {
+    margin-right: 10px;
+}
+p{
+    margin-bottom: 30px;
+}
+h1{
+    margin-top: 20px;
+    text-align: center;
+}

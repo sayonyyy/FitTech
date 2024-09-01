@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+    background-color: #080710;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+.forgot-password-container {
+    background-color: rgba(255,255,255,0.13);
+    padding: 40px;
+    border-radius: 10px;
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    text-align: center;
+    height: 500px;
+width: 300px;
+    position: relative;
+}
+.forgot-password-container h2 {
+    color: white;
+    margin-bottom: 40px;
+    font-size: 24px;
+}
+.forgot-password-container input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #2a2a35;
+    color: white;
+    font-size: 16px;
+    margin-bottom: 200px;
+    
+}
+::placeholder{
+color: #e5e5e5;
+}
+.forgot-password-container button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f0a500;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+.forgot-password-container button:hover {
+    background-color: #e69500;
+    
+}
+
+.background-circle1,
+.background-circle2 {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(100px);
+    z-index: -1;
+}
+.background-circle1 {
+    width: 300px;
+    height: 300px;
+    background: #1e90ff;
+    top: -100px;
+    left: -100px;
+}
+.background-circle2 {
+    width: 300px;
+    height: 300px;
+    background: #ff8c00;
+    bottom: -100px;
+    right: -100px;
+}

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>Hackathon all in1</title>
+</head>
+<body>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <header id = "interface" class ="interface">
+        
+            <nav>
+                <input type = "checkbox" id = "check">
+                <label for = "check"  class = "list-icon">
+                    <i class="fa-solid fa-list"></i></i>
+                </label>
+
+
+                <ul>
+                    <li><a href = "login/login.html">Login</a></li>
+                    <li><a href = "signup/signup.html">Sign Up</a></li> 
+                </ul>
+
+                <h1 class = "fit">Fitness & Sports</h1>
+                    <div class = "navbar border" id ="navbar border">
+                        <li><a href="#input-section" class="navLink">Home</a></li>
+                        <li><a href="#about" class="navLink">About</a></li>
+                        <li><a href="#services" class="navLink">Services</a></li> 
+                    <div>
+        
+                    </nav> 
+ 
+             <div class="container">
+                <div id="main-section">
+                    <div id="input-section"> 
+                        <div class="input-box">
+                            <img src = "https://media.post.rvohealth.io/wp-content/uploads/2023/10/Hub_desktop_fitness_3600x600_5-logo.jpg" alt = " " class = "input-pic"/>
+                            <input type="number" id="height" placeholder="Enter height (in feet)" />
+                            <input type="number" id="weight" placeholder="Enter weight (in kg)" />
+                            <button onclick="showCategories()">Enter</button>
+                        </div>
+                        <img src = "plankingMan.jpg" alt = " " class = "man"/>
+                        <img src = "runningGirl.jpg" alt = " " class = "girl"/>
+                    </div>
+                
+                 
+                    <div id="about">
+                        <h1>About Us</h1>
+                        <p>This is the about section where we tell more about ourselves.</p>
+                    </div>
+                
+                    <div id="services">
+                        <h1>Our Services</h1>
+                        <p>This is the services section where we describe what we offer.</p>
+                    </div>
+                </div> 
+                
+
+                
+                
+
+                <div id="categories-section" class="hidden">
+                    <div class="box" id="boxsp" onclick="showSports()">Sports</div>
+                    <div class="box" id="boxex" onclick="showExercise()">Exercise</div>
+                </div>
+        
+              <div class = "allbox">
+                <div id="sports-section" class="hidden">
+                    <img src = "sportspic.jpg" alt = " " class = "sports-pic"/>
+                    <h1 class = "sp-ex">SPORTS</h1>
+                    <p class = "sp-p">Sports are all about fun, fitness, and making memories.<br> They keep us active, teach teamwork, and bring joy to <br> our lives. Whether you're playing or cheering, sports <br> make every moment exciting!</p>
+                    <div class="box2" onclick="showFootballOptions()">Football</div>
+                    <div class="box2" onclick="showCricketOptions()">Cricket</div>
+                    <div class="box2" onclick="showBasketballOptions()">Basketball</div>
+                    <div class="box2" onclick="showBadmintonOptions()">Badminton</div>
+                    <div class="box2" onclick="showTennisOptions()">Tennis</div>
+                    <div class="box2" onclick="showHockeyOptions()">Hockey</div>
+                    <div class="box2" onclick="showBaseballOptions()">Baseball</div>
+                    <div class="box2" onclick="showRugbyOptions()">Rugby</div>
+                    <div class="box2" onclick="showBoxingOptions()">Boxing</div>
+                    <div class="box2" onclick="showJudoOptions()">Judo</div>
+                </div>
+                
+        
+
+                <div id="exercise-section" class="hidden">
+                    <h1 class = "sp-ex">EXERCISES</h1>
+                    <div class="box2" onclick="showPushupOptions()">Pushup</div>
+                    <div class="box2" onclick="showSitupOptions()">Situp</div>
+                    <div class="box2" onclick="showJumpingjacksOptions()">Jumping Jacks</div>
+                    <div class="box2" onclick="showBurpeesOptions()">Burpees</div>
+                    <div class="box2" onclick="showLightcardioOptions()">LightCardio</div>
+                    <div class="box2" onclick="showSquatsOptions()">Squats</div>
+                    <div class="box2" onclick="showShoulderpressOptions()">Shoulderpress</div>
+                    <div class="box2" onclick="showsBenchpressOptions()">Benchpress</div>
+                    <div class="box2" onclick="showPlanksOptions()">Planks</div>
+                    <div class="box2" onclick="showRunningOptions()">Running</div>
+                </div>
+
+
+
+
+              <div class = "alloptions">
+                <div id="football-options" class="hidden">
+                    <div class="box3rd" onclick="displayFootballDiet()">Diet</div>
+                    <div class="box4th" onclick="displayFootballVideos()">Videos</div>
+                    <div class="box5th" onclick="displayFootballAbout()">About</div>
+                </div>
+        
+                <div id="cricket-options" class="hidden">
+                    <div class="box3rd" onclick="displayCricketDiet()">Diet</div>
+                    <div class="box4th" onclick="displayCricketVideos()">Videos</div>
+                    <div class="box5th" onclick="displayCricketAbout()">About</div>
+                </div>
+        
+                <div id="basketball-options" class="hidden">
+                    <div class="box3rd" onclick="displayBasketballDiet()">Diet</div>
+                    <div class="box4th" onclick="displayBasketballVideos()">Videos</div>
+                    <div class="box5th" onclick="displayBasketballAbout()">About</div>
+                </div>
+
+                <div id="badminton-options" class="hidden">
+                    <div class="box3rd" onclick="displayBadmintonDiet()">Diet</div>
+                    <div class="box4th" onclick="displayBadmintonVideos()">Videos</div>
+                    <div class="box5th" onclick="displayBadmintonAbout()">About</div>
+                </div> 
+
+                <div id="tennis-options" class="hidden">
+                    <div class="box3rd" onclick="displayTennisDiet()">Diet</div>
+                    <div class="box4th" onclick="displayTennisVideos()">Videos</div>
+                    <div class="box5th" onclick="displayTennisAbout()">About</div>
+                </div>
+
+                <div id="hockey-options" class="hidden">
+                    <div class="box3rd" onclick="displayHockeyDiet()">Diet</div>
+                    <div class="box4th" onclick="displayHockeyVideos()">Videos</div>
+                    <div class="box5th" onclick="displayHockeyAbout()">About</div>
+                </div>
+
+                <div id="baseball-options" class="hidden">
+                    <div class="box3rd" onclick="displayBaseballDiet()">Diet</div>
+                    <div class="box4th" onclick="displayBaseballVideos()">Videos</div>
+                    <div class="box5th" onclick="displayBaseballAbout()">About</div>
+                </div>
+
+                <div id="rugby-options" class="hidden">
+                    <div class="box3rd" onclick="displayRugbyDiet()">Diet</div>
+                    <div class="box4th" onclick="displayRugbyVideos()">Videos</div>
+                    <div class="box5th" onclick="displayRugbyAbout()">About</div>
+                </div>
+
+                <div id="boxing-options" class="hidden">
+                    <div class="box3rd" onclick="displayBoxingDiet()">Diet</div>
+                    <div class="box4th" onclick="displayBoxingVideos()">Videos</div>
+                    <div class="box5th" onclick="displayBoxingAbout()">About</div>
+                </div>
+
+                <div id="judo-options" class="hidden">
+                    <div class="box3rd" onclick="displayJudoDiet()">Diet</div>
+                    <div class="box4th" onclick="displayJudoVideos()">Videos</div>
+                    <div class="box5th" onclick="displayJudoAbout()">About</div>
+                </div>
+
+
+
+
+        
+                <div id="pushup-options" class="hidden">
+                    <div class="box3rd" onclick="displayExerciseDiet()">Diet</div>
+                    <div class="box4th" onclick="displayPushupVideos()">Videos</div>
+                    <div class="box5th" onclick="displayPushupAbout()">About</div>
+                </div>
+        
+                <div id="situp-options" class="hidden">
+                    <div class="box3rd" onclick="displayExerciseDiet()">Diet</div>
+                    <div class="box4th" onclick="displaySitupVideos()">Videos</div>
+                    <div class="box5th" onclick="displaySitupAbout()">About</div>
+                </div>
+        
+                <div id="jumpingjacks-options" class="hidden">
+                    <div class="box3rd" onclick="displayExerciseDiet()">Diet</div>
+                    <div class="box4th" onclick="displayJumpingjacksVideos()">Videos</div>
+                    <div class="box5th" onclick="displayJumpingjacksAbout()">About</div>
+                </div>
+
+                <div id="burpees-options" class="hidden">
+                    <div class="box3rd" onclick="displayExerciseDiet()">Diet</div>
+                    <div class="box4th" onclick="displayBurpeesVideos()">Videos</div>
+                    <div class="box5th" onclick="displayBurpeesAbout()">About</div>
+                </div>
+               
+                <div id="lightcardio-options" class="hidden">
+                    <div class="box3rd" onclick="displayExerciseDiet()">Diet</div>
+                    <div class="box4th" onclick="displayLightcardioVideos()">Videos</div>
+                    <div class="box5th" onclick="displayLightcardioAbout()">About</div>
+                </div>
+
+                <div id="squats-options" class="hidden">
+                    <div class="box3rd" onclick="displayExerciseDiet()">Diet</div>
+                    <div class="box4th" onclick="displaySquatsVideos()">Videos</div>
+                    <div class="box5th" onclick="displaySquatsAbout()">About</div>
+                </div>
+
+                <div id="shoulderpress-options" class="hidden">
+                    <div class="box3rd" onclick="displayExerciseDiet()">Diet</div>
+                    <div class="box4th" onclick="displayShoulderpressVideos()">Videos</div>
+                    <div class="box5th" onclick="displayShoulderpressAbout()">About</div>
+                </div>
+
+                <div id="benchpress-options" class="hidden">
+                    <div class="box3rd" onclick="displayExerciseDiet()">Diet</div>
+                    <div class="box4th" onclick="displayBenchpressVideos()">Videos</div>
+                    <div class="box5th" onclick="displayBenchpressAbout()">About</div>
+                </div>
+
+                <div id="planks-options" class="hidden">
+                    <div class="box3rd" onclick="displayExerciseDiet()">Diet</div>
+                    <div class="box4th" onclick="displayPlanksVideos()">Videos</div>
+                    <div class="box5th" onclick="displayPlanksAbout()">About</div>
+                </div>
+
+                <div id="running-options" class="hidden">
+                    <div class="box3rd" onclick="displayExerciseDiet()">Diet</div>
+                    <div class="box4th" onclick="displayRunningVideos()">Videos</div>
+                    <div class="box5th" onclick="displayRunningAbout()">About</div>
+                </div>
+
+              </div>
+            </div> 
+        
+                <div id="result" class="hidden"></div>
+            </div>
+            
+        
+    </header>
+    
+   
+     <footer></footer>
+</body>
+</html>
