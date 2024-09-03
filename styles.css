@@ -192,7 +192,7 @@ ul li a{
     background-color: rgba(255,255,255,0.13);
     border: 2px solid rgba(205, 183, 238, 0.73);
     box-shadow: 0 0 40px rgba(67, 64, 92, 0.6);
-    width: 55%; 
+    width: 65%; 
     backdrop-filter: blur(10px); 
 }
 
